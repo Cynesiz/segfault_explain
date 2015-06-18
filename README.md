@@ -10,3 +10,7 @@ From http://lxr.free-electrons.com/source/arch/x86/mm/fault.c
  32  *   bit 3 ==                           1: use of reserved bit detected
  33  *   bit 4 ==                           1: fault was an instruction fetch
  34  */
+
+--+
+
+Kernel Panic error code and taint flag meanings:
