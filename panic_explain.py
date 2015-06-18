@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+#read kerncodes;kerncode=$(echo "${kerncodes}"|perl -pe 's/\s//g;s/([a-f0-9]{2})/\\x$1/g;s/^(.*)</\(\?\<\=$1\)/;s/>(.*)/\(\?\=$1\)/'); LC_ALL=C grep -roPba $kerncode /lib/modules/$(uname -r)/kernel/ ; LC_ALL=C grep -oPba $kerncode /boot/vmlinux-$(uname -r)
 scale = 16 
 num_of_bits = 4
 var = raw_input("Kernel panic error number?: ")
